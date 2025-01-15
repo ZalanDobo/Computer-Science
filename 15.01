@@ -1,0 +1,12 @@
+#1
+b=input('Enter a string:')
+for i in b:
+    print(i)
+ 
+#3
+add=0
+b=input('Enter a string:')
+for i in b:
+    two=i*2
+    add+=two
+print(add)
