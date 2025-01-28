@@ -1,0 +1,24 @@
+word='apple'
+alista=list()
+listword=list(word)
+wordno=len(word)
+blanks='_ '*wordno
+lives=7
+print(blanks)
+while lives>0 and listword!=alista :
+    letter=input('Guess a letter:')
+    print('You have',lives, 'lives left')
+    if letter in listword and listword!='':
+        print('Your guess is right')
+        lista=list(letter)
+        alista+=lista
+        print(alista)   
+    else:
+        lives-=1
+        print('Wrong, you lost a try')
+            
+else:
+    if lives==0:
+        print("You've lost")
+    else:
+        print('You won')
