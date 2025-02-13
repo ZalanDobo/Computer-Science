@@ -2,10 +2,11 @@ word='random'
 alista=list()
 listword=list(word)
 wordno=len(word)
-blanks='_ '*wordno
+blanks=list('_'*wordno)
 lives=7
 position=0
-print(blanks)
+firstblank='_ '*wordno
+print(firstblank)
 
 while lives>0 and '_' in blanks :
     letter=input('Guess a letter:')
@@ -13,10 +14,10 @@ while lives>0 and '_' in blanks :
     if letter in listword and listword!='':
         print('Your guess is right')
         position+=word.find(letter)
-        print(position)
-        blanks=blanks[0:position]+letter+blanks[position+1:]
-        print(blanks)
-        position=1
+        blanks[position]=letter
+        printblanks=' '.join(blanks)
+        print(printblanks)
+        position=0
     else:
         lives-=1
         print('Wrong, you lost a try')
@@ -27,4 +28,3 @@ else:
     else:
         print('You won') 
         
-    
