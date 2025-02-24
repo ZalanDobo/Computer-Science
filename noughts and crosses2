@@ -1,0 +1,80 @@
+first_row=list(' '*3)
+second_row=list(' '*3)
+third_row=list(' '*3)
+print(first_row)
+print(second_row)
+print(third_row)
+xrow=list('x'*3)
+yrow=list('y'*3)
+while True:
+    xcordinate=input('Enter the co-ordinate(Player X)(example:first row second column=12:')
+    print(xcordinate)
+    xcordinate=list(xcordinate)
+    if xcordinate[0]=='1':
+        seccord=xcordinate[1]
+        realseccord=int(seccord)-1
+        first_row[realseccord]='x'
+        print('this is the realseccord:',realseccord)
+        print(first_row)
+        print(second_row)
+        print(third_row)
+        if first_row==xrow:
+            print('Player X won')
+            break
+    elif xcordinate[0]=='2':
+        seccord=xcordinate[1]
+        realseccord=int(seccord)-1
+        second_row[realseccord]='x'
+        print('this is the realseccord:',realseccord)
+        print(first_row)
+        print(second_row)
+        print(third_row)
+        if second_row==xrow:
+            print('Player X won')
+            break
+    elif xcordinate[0]=='3':
+        seccord=xcordinate[1]
+        realseccord=int(seccord)-1
+        third_row[realseccord]='x'
+        print('this is the realseccord:',realseccord)
+        print(first_row)
+        print(second_row)
+        print(third_row)
+        if third_row==xrow:
+            print('Player Y won')
+            break
+    ycordinate=input('Enter the co-ordinate(Player Y)(example:first row second column=12:')
+    print(ycordinate)
+    if ycordinate[0]=='1':
+        seccord=ycordinate[1]
+        realseccord=int(seccord)-1
+        first_row[realseccord]='y'
+        print('this is the realseccord:',realseccord)
+        print(first_row)
+        print(second_row)
+        print(third_row)
+        if first_row==yrow:
+            print('Player Y won')
+            break
+    elif ycordinate[0]=='2':
+        seccord=ycordinate[1]
+        realseccord=int(seccord)-1
+        second_row[realseccord]='y'
+        print('this is the realseccord:',realseccord)
+        print(first_row)
+        print(second_row)
+        print(third_row)
+        if second_row==yrow:
+            print('Player Y won')
+            break
+    elif ycordinate[0]=='3':
+        seccord=ycordinate[1]
+        realseccord=int(seccord)-1
+        third_row[realseccord]='y'
+        print('this is the realseccord:',realseccord)
+        print(first_row)
+        print(second_row)
+        print(third_row)
+        if third_row==yrow:
+            break
+
