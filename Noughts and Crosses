@@ -1,0 +1,15 @@
+first_row=list(' '*3)
+second_row=list(' '*3)
+third_row=list(' '*3)
+print(first_row)
+print(second_row)
+print(third_row)
+xrow=list('x'*3)
+yrow=list('y'*3)
+while first_row!=xrow or first_row!=yrow or second_row!=xrow or second_row!=yrow or third_row!=xrow or third_row!=yrow or ' ':
+    xcordinate=input('Enter the co-ordinate(Playerx)(example:first row second column=12')
+    print(xcordinate)
+    xcordinate=list(xcordinate)
+    if xcordinate
+    ycordinate=input('Enter the co-ordinate(Playery)(example:first row second column=12')
+    print(ycordinate)
